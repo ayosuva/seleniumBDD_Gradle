@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"theinternet"},
-        //tags = {"@statuscodes"},
+        tags = {"@statuscodes"},
         plugin = {
                 "pretty",
                 "json:build/cucumber-report/cucumber.json",

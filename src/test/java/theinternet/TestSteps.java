@@ -86,4 +86,11 @@ public class TestSteps {
     public void result(){
         driver.findElement(By.id("result-stats")).isDisplayed();
     }
+
+    @And("Application displays the mess {string}")
+    public void applicationDisplaysTheMessOutputCode(String text) {
+        System.out.println(text);
+    }
+
+
 }
